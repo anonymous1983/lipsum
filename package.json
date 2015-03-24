@@ -1,0 +1,13 @@
+{
+  "version": "0.0.1",
+  "private": true,
+  "name": "lipsum",
+  "description": "lipsum",
+  "repository": "https://github.com/anonymous1983/lipsum",
+  "license": "GNU",
+  "devDependencies": {
+    "request": "~2.42.0"
+  },
+  "scripts": {
+  }
+}
