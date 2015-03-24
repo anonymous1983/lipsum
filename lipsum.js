@@ -4,18 +4,26 @@ var fs = require('fs');
 var request = require('request');
 var myfile = "myfile.txt";
 var content = "";
+var settings = {
+      'type' : 'meat-and-filler',
+      'start_with_lorem' : true,
+      'paras' : 3,
+      'sentences' : 0,
+      //Added the no_tags options (Joel Lord joel@engrenage.com)
+      'no_tags' : false      
+    };
 
 if (fs.existsSync(myfile)) {
     console.info("Begin Programme");
     request("https://baconipsum.com/api/?callback=?", function(error, response, body) {
             if (!error && response.statusCode == 200) {
-                if (baconGoodness && baconGoodness.length > 0) {
-                    for (var i = 0; i < baconGoodness.length; i++) {
+                if (body && body.length > 0) {
+                    for (var i = 0; i < body.length; i++) {
                         //Check if the rendering should be with or without tags
                         if (settings.no_tags)
-                            content += baconGoodness[i];
+                            content += body[i];
                         else
-                            content += '<p>' + baconGoodness[i] + '</p>'
+                            content += '<p>' + body[i] + '</p>'
                     }
                 }
                 fs.writeFile(myfile, content, function() {
@@ -32,3 +40,6 @@ if (fs.existsSync(myfile)) {
 } else {
     console.log("File does not exist - " + myfile);
 }
+
+
+//http://cdn.baconipsum.com/api/jquery-BaconIpsum.js
