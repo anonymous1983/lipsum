@@ -21,6 +21,8 @@ if (fs.existsSync(myfile)) {
                 fs.writeFile(myfile, content, function() {
                     console.info("End to Upper Case File");
                 })
+            }else{
+                console.log(error);
             }
         })
         /*var content = fs.readFileSync(myfile, 'utf8');

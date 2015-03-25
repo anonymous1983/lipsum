@@ -6,7 +6,9 @@
   "repository": "https://github.com/anonymous1983/lipsum",
   "license": "GNU",
   "devDependencies": {
-    "request": "~2.42.0"
+    "request": "~2.42.0",
+    "jsdom": "",
+    "async-replace": ""
   },
   "scripts": {
   }
