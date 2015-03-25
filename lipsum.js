@@ -1,18 +1,94 @@
 // uppercaseme.js
 "use strict"
 var fs = require('fs');
-//var lorem = require('./lib/lorem.js');
+var lorem = require('./lib/lorem.js');
 var regTagIpsum = /(<ipsum)([A-Za-z0-9>< ="'-]*)(<\/ipsum>)/gi;
 
 var myfile = "myfile.txt";
 var myfileHtml = "test.html";
 var content = "";
 
-/*var obgLorem = new lorem();
-lorem().type = 2;
-lorem().query = '2p';*/
+/*var lorem = new Lorem;
+        lorem.type = Lorem.TEXT;
+        lorem.query = '2p';*/
+/*
+console.log('---'+x._createLorem());
 
 
+console.log('=================================================================');
+console.log('=================================================================');
+console.log('=================================================================');
+obgLorem.type = obgLorem.TEXT;
+obgLorem.query = '1w';
+console.log(obgLorem._createLorem());
+
+console.log(x._randomInt(5,7));
+*/
+
+
+var y = new lorem();
+
+var y2 = new lorem();
+
+console.log(y.createLorem());
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//http://cdn.baconipsum.com/api/jquery-BaconIpsum.js
+/*
 var Lorem;
 //Create a class named Lorem and constructor
 Lorem = function() {
@@ -104,11 +180,16 @@ Lorem.prototype.createLorem = function(element) {
     if (element == null) return lorem;
 };
 
+    //https://github.com/f/loremjs
 
 
-
-
-
+//console.log(rep);    
+testHtml = testHtml.replace(regTagIpsum, function(){
+    var lorem = new Lorem;
+    lorem.type = Lorem.TEXT;
+    lorem.query = '5s';
+    return lorem.createLorem();
+});
 
 if (fs.existsSync(myfileHtml)) {
     console.info("Begin lipsum");
@@ -124,3 +205,4 @@ if (fs.existsSync(myfileHtml)) {
 } else {
     console.log("File does not exist - " + myfileHtml);
 }
+*/
