@@ -1,15 +1,18 @@
 // uppercaseme.js
 "use strict"
 var fs = require('fs');
-var lorem = require('./lib/lorem.js');
+//var lorem = require('./lib/lorem.js');
 var regTagIpsum = /(<ipsum)([A-Za-z0-9>< ="'-]*)(<\/ipsum>)/gi;
 
 var myfile = "myfile.txt";
 var myfileHtml = "test.html";
 var content = "";
 
+/*var obgLorem = new lorem();
+lorem().type = 2;
+lorem().query = '2p';*/
 
-//console.log(lorem.Lorem());
+
 var Lorem;
 //Create a class named Lorem and constructor
 Lorem = function() {
@@ -100,6 +103,11 @@ Lorem.prototype.createLorem = function(element) {
     }
     if (element == null) return lorem;
 };
+
+
+
+
+
 
 
 if (fs.existsSync(myfileHtml)) {
