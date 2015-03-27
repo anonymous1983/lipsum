@@ -1,15 +1,34 @@
 {
   "version": "0.0.1",
-  "private": true,
   "name": "lipsum",
-  "description": "lipsum",
-  "repository": "https://github.com/anonymous1983/lipsum",
+  "private": false,
   "license": "GNU",
-  "devDependencies": {
-    "request": "~2.42.0",
-    "jsdom": "",
-    "async-replace": ""
+  "description": "Convert your ipsum tag to the Lorem Ipsum content",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anonymous1983/lipsum"
   },
-  "scripts": {
-  }
+  "author": "Anis ABID <anab.tn@gmail.com>",
+  "contributors": [],
+  "directories": {
+    "lib": "lib"
+  },
+  "bin": {
+    "lipsum": "./lib/lipsum.js"
+  },
+  "tags": [
+    "Lorem Ipsum",
+    "lipsum"
+  ],
+  "devDependencies": {
+    "chalk": "^0.4.0",
+    "jasmine-core": "^2.2.0",
+    "karma": "^0.12.31",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.5",
+    "lodash": "~2.4.1",
+    "q": "~1.0.0",
+    "request": "~2.42.0"
+  },
+  "scripts": {}
 }
