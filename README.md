@@ -18,6 +18,7 @@ Getting Started
 
 to use lipsum is so simple,
 If you want to put a Lorem Ipsum text inside a DIV (etc.) tag just write:
+
     <ipsum data-options="2p"></ipsum>
 
 Options
